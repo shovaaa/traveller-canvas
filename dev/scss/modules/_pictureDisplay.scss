@@ -1,5 +1,5 @@
 .picture__card{
-    padding: 3% 11%;
+    padding: 70px 0 0 160px;
 
     @include respond-below(xs){
         padding: 0px;
@@ -32,7 +32,7 @@
         .text__card{
             padding-top: 18%;
             padding-left: 5%;
-            width: 520px;
+            width: 510px;
             height: 200px;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('.././images/image3.jpg');
             background-size: cover;
@@ -53,7 +53,7 @@
         .text__card{
             padding-top: 50%;
             padding-left: 2%;
-            width: 246px;
+            width: 240px;
             height: 225px;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('.././images/image4.jpg');
             background-size: cover;
@@ -76,7 +76,7 @@
         .text__card{
             padding-top: 50%;
             padding-left: 2%;
-            width: 246px;
+            width: 240px;
             height: 225px;
             margin-top: 30px;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('.././images/image5.jpg');

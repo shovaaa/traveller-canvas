@@ -1,11 +1,12 @@
 $dark: var(--dark);
 
 .subscribe__container{
-    margin: 0 150px;
-    padding: 20px 0 90px;
+    margin: 0;
+    padding: 10px 0 80px 165px;
 
     @include respond-below(xs){
-        margin: 0 20px;
+        padding: 0 20px;
+        margin-bottom: 50px;
     }
 
     .subscribe__text{
@@ -18,11 +19,11 @@ $dark: var(--dark);
         }
 
         .subscribe__title{
-            font-size: 22px;
+            font-size: 30px;
             font-weight: bold;
             text-transform: uppercase;
             color: var(--dark);
-            margin-bottom: 3px;
+            margin-bottom: 0px;
         }
         
         .subscribe__para{
@@ -32,7 +33,7 @@ $dark: var(--dark);
     }
 
     .subscribe__input{
-        margin-left: 106px;
+        margin-left: 80px;
 
         @include respond-below(xs){
             margin-left: 0;

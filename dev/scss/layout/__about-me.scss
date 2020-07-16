@@ -1,6 +1,6 @@
 .about{
     .banner{
-        margin: 70px 150px 50px;
+        margin: 70px 144px 35px 156px;
 
         @include respond-below(xs){
             margin: 70px 0 50px;
@@ -8,6 +8,7 @@
     }
 
     .carousel__container{
+        padding: 0px 110px 60px;
         .title{
             visibility: hidden;
             
@@ -17,5 +18,11 @@
             display: block;
             content: 'Post by author';
         }
+
+        @include respond-below(xs){
+            padding: 0px 10px 60px;
+        }
     }
+
+    
 }

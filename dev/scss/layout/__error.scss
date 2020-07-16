@@ -1,15 +1,17 @@
 .error__container{
-    padding: 4% 11%;
+    padding: 70px 0 0 110px;
+    margin-bottom: 100px;
 
     @include respond-below(xs){
         flex-direction: column !important;
         padding: 20px;
+        margin: 0;
     }
 
     .error__imgContainer{
-        width: 700px;
-        height: 600px;
-        margin-right: 50px;
+        width: 550px;
+        height: 550px;
+        margin-right: 40px;
 
         @include respond-below(xs){
             width: 100%;
@@ -24,7 +26,7 @@
 
     .error__msg{
         align-self: flex-end;
-        padding-bottom: 50px;
+        padding-bottom: 45px;
 
         @include respond-below(xs){
             width: 100%;

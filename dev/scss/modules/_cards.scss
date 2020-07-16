@@ -60,7 +60,7 @@
 
 //cards CSS
 .posts__card-container{
-    padding: 35px  0 0 155px;
+    padding: 30px  150px 0 140px;
 
     @include respond-below(xs){
         padding: 0px 20px 30px;
@@ -69,6 +69,11 @@
 
     .posts__header{
         padding-bottom: 2%;
+
+        .title, 
+        .description{
+            padding-left: 12px;
+        }
 
 
         .link{
@@ -82,22 +87,21 @@
     }
 
     .posts__card-flex{
-        width: 500px ;
-        height: 155px;
+        width: 520px;
+        height: auto;
         border: none;
         border-bottom: 1px solid var(--light-grey);
-        margin:0 50px 30px 15px;
+        padding-bottom: 25px;
+        margin:0 0 30px 15px;
         color: var(--black);
         
         @include respond-below(xs){
             width: 100%;
             height: auto;
-            margin: 0px;
         }
         .posts__card-img{
-            width: 175px;
-            height: 125px;
-            padding-top: 2px;
+            width: 154px;
+            height: 118px;
             filter: grayscale(30%);
 
             @include respond-below(xs){
@@ -107,6 +111,9 @@
             }
         }
         .posts__card-body{
+            width: 100%;
+            height: auto;
+            padding: 0;
             padding-left: 30px;
 
             @include respond-below(xs){
@@ -121,10 +128,10 @@
                 text-transform: uppercase;
             }
             .posts__card-text{
-                width: auto;
+                width: 100%;
                 height: auto;
-                font-size: 15px;
-                margin: 8px 0px;
+                font-size: 18px;
+                margin: 8px 0;
 
                 @include respond-below(xs){
                     width: 200px;

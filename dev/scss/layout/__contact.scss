@@ -1,17 +1,17 @@
 .contact__heading{
     border-bottom: 1px solid var(--light-grey);
-    margin: 4% 11%;
+    margin: 60px 145px 35px 150px;
     padding-bottom: 25px;
 
     @include respond-below(xs){
-        margin: 4% 2%;
+        margin: 60px 20px;
     }
 
     div{
         .contact__social-icons{
             color: var(--link-blue);
             font-size: 15px;
-            padding-left: 745px; 
+            padding-left: 730px; 
             
             @include respond-below(xs){
                 padding-left: 50px;
@@ -25,19 +25,20 @@
 }
 
 .contact__container{
-    padding: 0 11%;
+    padding: 0 155px;
 
     @include respond-below(xs){
         flex-direction: column !important;
-        padding: 0 2%;
+        padding: 0;
     }
 
     .contact__detail{
         font-size: 15px;
-        width: 700px;
+        width: 100%;
 
         @include respond-below(xs){
             width: 100%;
+            padding: 0 20px;
         }
 
         .contact__address-icon{
@@ -61,9 +62,11 @@
     }
 
     .contact__form{
+        margin-left: 15px;
 
         @include respond-below(xs){
             padding-top: 20px;
+            margin: 0 30px;
         }
 
         div{
@@ -73,8 +76,8 @@
         }
         
         input{
-            width: 345px;
-            margin-left: 35px;
+            width: 320px;
+            margin-left: 30px;
             margin-bottom: 30px;
             font-size: 15px;
             color: var(--light-grey);
@@ -83,20 +86,20 @@
             border: 1px solid var(--light-grey);
 
             @include respond-below(xs){
-                margin-left: 10px;
+                margin-left: 0px;
                 margin-bottom: 10px;
                 
             }
         }
 
         .input__msg{
-            width: 725px;
+            width: 670px;
             height: 200px;
             padding: 18px 18px 170px;
 
             @include respond-below(xs){
                 width: auto;
-                margin-right: 5px;
+                margin-right: 0;
                 
             }
         }
@@ -115,19 +118,25 @@
 }
 
 .contact__images{
-    width: 1052px;
-    height: 400px;
-    margin: 1% 11% 5%;
+    width: 1050px;
+    height: 435px;
+    margin: 5px 0px 0px 155px;
 
     @include respond-below(xs){
         width: 100%;
         height: auto;
-        margin: 30px 0;
+        margin: 30px 0 0;
     }
 
     .contact__img{
         width: 100%;
-        height: 100%;
+        height: 550px;
         filter: grayscale(50%);
+
+        @include respond-below(xs){
+            width: 100%;
+            height: auto;
+        }
+
     }
 }

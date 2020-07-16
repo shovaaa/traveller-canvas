@@ -1,23 +1,42 @@
 .home__third{
 
-    .display{
-        margin: 3% 11% 0;
+    .carousel__container{
+        padding: 30px 110px 0;
+
+        .title,
+        .description{
+            display: none;
+        }
 
         @include respond-below(xs){
-            margin: 20px 0 0;
-        }        
+            padding: 10px 0;
+        }
+    }
 
+    .display{
+        height: auto;
+        padding: 225px 0 65px 60px;
+        margin: 50px 155px 0;
+
+        @include respond-below(xs){
+            margin: 50px 0 0;
+            padding: 225px 30px 65px;
+        }
     }
 
     .picture__card{
-        padding: 3% 11% 0;
+        padding: 30px 145px 0 155px;
 
         @include respond-below(xs){
-            padding: 40px 0;
+            padding: 0 0 40px;
         }
     }
 
     .slick__img{
         display: none;
+    }
+
+    .banner{
+        margin-top: 15px;
     }
 }

@@ -1,9 +1,11 @@
 .notfound__container{
-    padding: 4% 11%;
+    padding: 40px 0 0px 130px;
+    margin-bottom: 80px;
 
     @include respond-below(xs){
         flex-direction: column !important;
         padding: 20px;
+        margin-bottom: 0;
     }
 
     .notfound__imgContainer{
@@ -24,7 +26,7 @@
 
     .notfound__msg{
         align-self: flex-end;
-        padding-bottom: 50px;
+        padding-bottom: 80px;
 
         @include respond-below(xs){
             width: 100%;
