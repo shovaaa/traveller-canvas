@@ -1,0 +1,337 @@
+@import "variables/variables";
+
+@font-face {
+    font-family: 'pv-common';
+    src : url('#{$pvc-font-path}/pv-common.eot?5gs8c3');
+    src : url('#{$pvc-font-path}/pv-common.eot?5gs8c3#iefix') format('embedded-opentype'),
+    url('#{$pvc-font-path}/pv-common.ttf?5gs8c3') format('truetype'),
+    url('#{$pvc-font-path}/pv-common.woff?5gs8c3') format('woff'),
+    url('#{$pvc-font-path}/pv-common.svg?5gs8c3#pv-common') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="pvc-"],
+[class*=" pvc-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'pv-common' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@function unicode($str) {
+    @return unquote("\"")+$str+unquote("\"");
+}
+
+.pvc-minus {
+    &:before {
+        content: unicode($pvc-minus);
+    }
+}
+
+.pvc-translate {
+    &:before {
+        content: unicode($pvc-translate);
+    }
+}
+
+.pvc-add {
+    &:before {
+        content: unicode($pvc-add);
+    }
+}
+
+.pvc-cash {
+    &:before {
+        content: unicode($pvc-cash);
+    }
+}
+
+.pvc-contact {
+    &:before {
+        content: unicode($pvc-contact);
+    }
+}
+
+.pvc-done {
+    &:before {
+        content: unicode($pvc-done);
+    }
+}
+
+.pvc-orders {
+    &:before {
+        content: unicode($pvc-orders);
+    }
+}
+
+.pvc-plus {
+    &:before {
+        content: unicode($pvc-plus);
+    }
+}
+
+.pvc-settings {
+    &:before {
+        content: unicode($pvc-settings);
+    }
+}
+
+.pvc-signout-2 {
+    &:before {
+        content: unicode($pvc-signout-2);
+    }
+}
+
+.pvc-signout {
+    &:before {
+        content: unicode($pvc-signout);
+    }
+}
+
+.pvc-stripe {
+    &:before {
+        content: unicode($pvc-stripe);
+    }
+}
+
+.pvc-hamburger {
+    &:before {
+        content: unicode($pvc-hamburger);
+    }
+}
+
+.pvc-arrow-right {
+    &:before {
+        content: unicode($pvc-arrow-right);
+    }
+}
+
+.pvc-arrow-left {
+    &:before {
+        content: unicode($pvc-arrow-left);
+    }
+}
+
+.pvc-arrow-down {
+    &:before {
+        content: unicode($pvc-arrow-down);
+    }
+}
+
+.pvc-arrow-up {
+    &:before {
+        content: unicode($pvc-arrow-up);
+    }
+}
+
+.pvc-thin-down {
+    &:before {
+        content: unicode($pvc-thin-down);
+    }
+}
+
+.pvc-thin-up {
+    &:before {
+        content: unicode($pvc-thin-up);
+    }
+}
+
+.pvc-thin-right {
+    &:before {
+        content: unicode($pvc-thin-right);
+    }
+}
+
+.pvc-thin-left {
+    &:before {
+        content: unicode($pvc-thin-left);
+    }
+}
+
+.pvc-mail {
+    &:before {
+        content: unicode($pvc-mail);
+    }
+}
+
+.pvc-close {
+    &:before {
+        content: unicode($pvc-close);
+    }
+}
+
+.pvc-brand {
+    &:before {
+        content: unicode($pvc-brand);
+    }
+}
+
+.pvc-google {
+    &:before {
+        content: unicode($pvc-google);
+    }
+}
+
+.pvc-linkedin {
+    &:before {
+        content: unicode($pvc-linkedin);
+    }
+}
+
+.pvc-linkedin-2 {
+    &:before {
+        content: unicode($pvc-linkedin-2);
+    }
+}
+
+.pvc-soundcloud-3 {
+    &:before {
+        content: unicode($pvc-soundcloud-3);
+    }
+}
+
+.pvc-soundcloud-2 {
+    &:before {
+        content: unicode($pvc-soundcloud-2);
+    }
+}
+
+.pvc-vimeo-2 {
+    &:before {
+        content: unicode($pvc-vimeo-2);
+    }
+}
+
+.pvc-vimeo {
+    &:before {
+        content: unicode($pvc-vimeo);
+    }
+}
+
+.pvc-flickr {
+    &:before {
+        content: unicode($pvc-flickr);
+    }
+}
+
+.pvc-flickr2 {
+    &:before {
+        content: unicode($pvc-flickr2);
+    }
+}
+
+.pvc-tumblr-2 {
+    &:before {
+        content: unicode($pvc-tumblr-2);
+    }
+}
+
+.pvc-tumblr {
+    &:before {
+        content: unicode($pvc-tumblr);
+    }
+}
+
+.pvc-instagram-2 {
+    &:before {
+        content: unicode($pvc-instagram-2);
+    }
+}
+
+.pvc-facebook-square {
+    &:before {
+        content: unicode($pvc-facebook-square);
+    }
+}
+
+.pvc-facebook {
+    &:before {
+        content: unicode($pvc-facebook);
+    }
+}
+
+.pvc-foursquare {
+    &:before {
+        content: unicode($pvc-foursquare);
+    }
+}
+
+.pvc-soundcloud {
+    &:before {
+        content: unicode($pvc-soundcloud);
+    }
+}
+
+.pvc-google-plus-2 {
+    &:before {
+        content: unicode($pvc-google-plus-2);
+    }
+}
+
+.pvc-tripadvisor {
+    &:before {
+        content: unicode($pvc-tripadvisor);
+    }
+}
+
+.pvc-yelp {
+    &:before {
+        content: unicode($pvc-yelp);
+    }
+}
+
+.pvc-youtube {
+    &:before {
+        content: unicode($pvc-youtube);
+    }
+}
+
+.pvc-youtube-2 {
+    &:before {
+        content: unicode($pvc-youtube-2);
+    }
+}
+
+.pvc-youtube-3 {
+    &:before {
+        content: unicode($pvc-youtube-3);
+    }
+}
+
+.pvc-instagram {
+    &:before {
+        content: unicode($pvc-instagram);
+    }
+}
+
+.pvc-pinterest {
+    &:before {
+        content: unicode($pvc-pinterest);
+    }
+}
+
+.pvc-pinterest-2 {
+    &:before {
+        content: unicode($pvc-pinterest-2);
+    }
+}
+
+.pvc-twitter {
+    &:before {
+        content: unicode($pvc-twitter);
+    }
+}
+
+.pvc-paypal {
+    &:before {
+        content: unicode($pvc-paypal);
+    }
+}

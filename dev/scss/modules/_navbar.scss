@@ -1,0 +1,38 @@
+.navbar{
+    padding: 12px ;
+
+    .navbar-collapse {
+        @include respond-below(xs){
+            text-align: center;
+        }
+    }
+
+    .navbar-nav{
+        padding-left: 245px;
+        letter-spacing: 1px;
+
+        @include respond-below(xs){
+            
+                display: inline-block;
+                float: none;
+                vertical-align: top;
+                padding-left: 0;
+                padding-right: 0;
+            
+        }
+
+        .active>.nav-link{
+            color: var(--link-pink);
+        }
+
+        .nav-item{
+            padding-right: 38px;
+
+            a{
+                font-size: 14px;
+                text-transform: uppercase;
+                color: var(--menu-text);
+            }
+        }
+    }
+}

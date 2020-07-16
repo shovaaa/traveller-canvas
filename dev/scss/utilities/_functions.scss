@@ -1,0 +1,20 @@
+$class-slug: zindex !default;
+
+@for $i from 1 through 10 {
+	.#{$class-slug}-#{$i} {
+		z-index: $i;
+	}
+}
+
+// Black & White Opacity [background: black(.75);]
+@function black($opacity) {
+	@return rgba(0, 0, 0, $opacity);
+}
+
+@function white($opacity) {
+	@return rgba(255, 255, 255, $opacity);
+}
+
+@function brand($opacity) {
+	@return rgba(33, 39, 44, $opacity);
+}

@@ -1,0 +1,147 @@
+body {
+    font-family: 'Quattrocento Sans', sans-serif;
+  }
+
+.post{
+    .post__heading{
+        border-bottom: 1px solid var(--light-grey);
+        padding-bottom: 20px;
+        margin: 0 150px;
+    }
+
+    .picture__card1-bg{
+        width: 100%;
+        height: 400px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('.././images/image3.jpg');
+        background-size: cover;
+        padding-top: 40px;
+
+        .post__featured{
+            width: 160px;
+            height: auto;
+            background-color: var(--link-pink);
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            padding: 10px 0 7px 12px;
+        }
+
+        .post__shareinfo{
+            margin-top: 234px;
+            width: 600px;
+            background-color: white;
+            padding-top: 20px;
+
+            .post__share-icon{
+
+                .title{
+                    text-transform: initial;
+                    font-size: 18px;
+                    color: var(--black);
+                    font-weight: bold;
+                    padding: 5px;
+                }
+                i{
+                    font-size: 15px;
+                    color: blue($color: #000000);
+                    padding: 10px;
+                }
+            }
+        
+            .post__textCard{
+            
+                .post__card-para{
+                    font-size: 12px;
+                    width: 180px;
+                    font-style: oblique;
+                    color: var(--light-gray);
+                    border-right: 2px solid var(--light-gray);
+                    margin-right: 15px;
+                }
+                .post__card-link{
+                    width: 100%;
+                    height: auto;
+                    font-size: 12px;
+                    font-style: oblique;
+                    padding-right: 15px;
+                    color: var(--link-blue);
+
+                    i{
+                        color: var(--black);
+                        padding-right: 10px;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .post__para{
+        width: 100%;
+        height: auto;
+        font-size: 15px;
+        margin-top: 50px;
+
+        .post__quotes{
+            margin-top: 20px;
+
+            i{
+                padding-right: 10px;
+            }
+        }
+
+        .post__para-img{
+            margin: 30px 0;
+
+            img{
+                width: 250px;
+                height: 150px;
+                margin-right: 30px;
+            }
+        }
+
+        ul{
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+
+    }
+
+    .posts__tag{
+        color: white;
+        
+
+        span{
+            background-color: var(--background-blue);
+            font-size: 15px;
+            font-weight: bold;
+            padding: 5px 20px;
+        }
+        i{
+            font-size: 12px;
+           
+        }
+    }
+}
+
+.post__mainBlog{
+    width: 700px;
+    height: auto;
+    margin: 3% 0 3% 11%;
+
+    .post__mainBorder{
+        padding-bottom: 50px;
+        border-bottom: 1px solid var(--light-grey);
+    }
+
+    .link{
+        padding-left: 0;
+        text-transform: uppercase;
+
+        i{
+            padding-left: 0;
+            padding-right: 10px;
+        }
+    }
+}

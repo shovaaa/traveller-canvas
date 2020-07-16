@@ -1,0 +1,28 @@
+// Clear Padding and Margin
+%clear-gutter {
+    margin: 0;
+    padding: 0;
+}
+
+// Removes the list style
+%list-none {
+    list-style-type: none;
+}
+
+// Styling the all header fonts
+%heading {
+    font-family: $header-font;
+    font-weight: bold;
+}
+
+// Transparent BG for Background Images
+%bg-transparent {
+    content: '';
+    background-color: brand(.75);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}

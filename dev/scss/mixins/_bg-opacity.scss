@@ -1,0 +1,5 @@
+// Background Opacity mixin | Add opacity to a background color
+// eg. @include bg-opacity($color-white, .5);
+@mixin bg-opacity($color, $opacity) {
+  background-color: rgba($color, $opacity);
+}

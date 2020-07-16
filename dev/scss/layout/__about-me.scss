@@ -1,0 +1,21 @@
+.about{
+    .banner{
+        margin: 70px 150px 50px;
+
+        @include respond-below(xs){
+            margin: 70px 0 50px;
+        }
+    }
+
+    .carousel__container{
+        .title{
+            visibility: hidden;
+            
+        }
+        .title:after{
+            visibility: visible;
+            display: block;
+            content: 'Post by author';
+        }
+    }
+}

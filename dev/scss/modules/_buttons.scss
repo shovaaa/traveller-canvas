@@ -1,0 +1,25 @@
+.btn {
+    display: block;
+    border: none;
+    line-height: 1;
+    background-color: var(--button);
+    text-transform: uppercase;
+    color: var(--white);
+    padding: 22px;
+    font-size: 16px;
+    font-weight: bold;
+    @include border-radius(0);
+
+    i{
+        padding-left: 3px;
+    }
+
+}
+
+a,
+button,
+.btn {
+    &:focus {
+        outline: none;
+    }
+}

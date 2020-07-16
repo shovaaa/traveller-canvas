@@ -1,0 +1,94 @@
+.#{$global} {
+    &-header {
+        width: 100%;
+        height: auto;
+        background-color: var(--header-bg);
+        color: var(--white);
+        text-transform: uppercase;
+        padding: 12px;
+        margin: 0px;
+    }
+}
+
+.container{
+    max-width: 100% !important;
+    height: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+
+    .icon{
+        width: max-content;
+        height: auto;
+        padding: 0px 35px;
+        margin: 0px;
+
+        @include respond-below(xs){
+        
+            padding: 0px;
+            
+        }
+        
+        i{
+            color: var(--icon);
+            font-size: 14px;
+            margin-right: 12px;
+        }   
+    }
+
+    .logo{
+        padding: 0;
+        width: max-content;
+        height: auto;
+        padding: 0 0 0 297px;
+
+        p{
+            font-size: 27px;
+            font-weight: 900;
+            
+            span{
+                margin-left: 5px;
+            }
+        }
+       
+        @include respond-below(xs){
+        
+            padding: 0px;
+            
+        }
+    }
+
+    .search-box{
+        align-self: flex-end;
+        color: var(--icon);
+        padding-left: 393px;
+        padding-bottom: 7px;
+
+        @include respond-below(xs){
+        
+            padding: 0px;
+            
+        }
+
+        i{
+            font-size: 18px;
+        }
+    
+        input{
+            width: 95px;
+            background-color: var(--header-bg);
+            border: white;
+            font-size: 15px;
+        }
+
+    }
+}
+
+
+
+
+
+
+
+

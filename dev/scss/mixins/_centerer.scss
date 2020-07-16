@@ -1,0 +1,19 @@
+// Vertically center with Absolute Position
+// eg. @include centerer(false, true);[Centering vertically]
+// eg. @include centerer(true, false);[Centering horizontally]
+// eg. @include centerer;[Centering Both Side]
+@mixin centerer($horizontal: true, $vertical: true) {
+  position: absolute;
+
+  @if ($horizontal and $vertical) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } @else if ($horizontal) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  } @else if ($vertical) {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}

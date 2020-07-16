@@ -1,0 +1,32 @@
+.title{
+    margin-bottom: 0px;
+    font-weight: bolder;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.description{
+    margin: 0px;
+    font-size: 18px;
+    color: var(--grey);
+}
+
+
+.link{
+    color: var(--link-blue);
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-left: 605px;
+
+    @include respond-below(xs){
+        padding-left: 50px;
+    }
+
+    i{
+        padding-left: 10px;
+    }
+}
+
+a:hover{
+    color: var(--link-pink) !important;
+}

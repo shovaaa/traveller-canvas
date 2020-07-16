@@ -1,0 +1,7 @@
+// 100% circle
+// eg. @include circle(100px);
+@mixin circle($size) {
+  width: $size;
+  height: $size;
+  border-radius: 100%;
+}

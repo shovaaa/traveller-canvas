@@ -1,0 +1,5 @@
+// Transition
+// eg. @include transition(all 2s ease-out);
+@mixin transition($args...) {
+  transition: $args;
+}

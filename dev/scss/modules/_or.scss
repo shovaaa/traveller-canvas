@@ -1,0 +1,33 @@
+.or {
+    position: relative;
+    text-align: center;
+    &:after {
+        content: '';
+        @include centerer(false, true);
+        left: 0;
+    }
+    span {
+        width: 60px;
+        height: 60px;
+        padding-top: 15px;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        z-index: 1;
+        @include border-radius(100%);
+    }
+    &--plain-horizontal {
+        &:after {
+            content: '';
+            width: 100%;
+            height: 1px;
+        }
+    }
+    &--rounded-horizontal {
+        &:after {
+            content: '';
+            width: 100%;
+            height: 1px;
+        }
+    }
+}

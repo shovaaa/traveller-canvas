@@ -1,0 +1,21 @@
+section{
+
+    .smallbanner{
+        width: 150px;
+        height: 100px;
+        background-color: var(--icon);
+        margin-bottom: 20px;
+        margin-right: 20px;
+        padding-top: 35px;
+
+        p{
+            margin: 0;
+            color: white;
+            font-size: 12px;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+    }
+}

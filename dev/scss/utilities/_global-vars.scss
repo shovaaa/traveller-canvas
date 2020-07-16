@@ -1,0 +1,84 @@
+$global: "theme";
+
+:root {
+    --blue: #034AA6;
+    --mid-blue: #2273a6;
+    --dark-blue: #0d3559;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #f2cb06;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #bde8f2;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #0d3559;
+    --success: #28a745;
+    --info: #bde8f2;
+    --warning: #f2cb06;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #000;
+    --title-red: #a8303c;
+    --title-blue: #2f797e;
+    --button: #db5461;
+    --background-blue: #62bbc1;
+    --link-blue: #62bbc1;
+    --link-pink: #db5461;
+    --hover-red: #a8303c;
+    --hover-pink: #db5461;
+    --hover-blue: #2f797e;
+    --black: #010400;
+    --header-bg: #494c48;
+    --icon: #636363;
+    --menu-text: #636363;
+    --grey: #747674;
+    --light-gray: #a2a5a0;
+    --light-grey: #d2d8ce;
+
+
+
+    
+
+}
+
+// Font Variables
+$base-font: 	'Quattrocento Sans', "Helvetica Neue", Arial, sans-serif;
+$header-font: 	'Quattrocento Sans', "Helvetica Neue", Arial, sans-serif;
+
+// Bootstrap
+$color-primary: var(--primary) !default;
+$color-secondary: var(--secondary) !default;
+$color-success: var(--success) !default;
+$color-info: var(--info) !default;
+$color-warning: var(--warning) !default;
+$color-danger: var(--danger) !default;
+
+// Other Colors
+$color-white: var(--white);
+$color-black: var(--dark);
+
+// Page Color Properties
+$color-body: var(--white);
+
+$color-base: var(--dark-blue);
+$color-header-typo: var(--dark-blue);
+$color-border: var(--dark);
+
+$color-header: var(--cyan);
+$color-footer: var(--dark-blue);
+
+$color-light-link: var(--white);
+$color-light-link-hover: white(0.75);
+$color-light-link-visited: var(--white);
+$color-light-link-active: var(--white);
+
+$color-default-link: var(--secondary);
+$color-default-link-hover: white(0.75);
+$color-default-link-visited: var(--secondary);
+$color-default-link-active: var(--secondary);

@@ -1,0 +1,207 @@
+// Font Face Categories
+.font-face {
+    &-base {
+        font-family: $base-font;
+        font-weight: normal;
+    }
+    &-header {
+        font-family: $header-font;
+        font-weight: bold;
+    }
+}
+
+// Font Size
+.font-size {
+    &-10 {
+        font-size: rem(10px !important);
+    }
+    &-11 {
+        font-size: rem(11px !important);
+    }
+    &-12 {
+        font-size: rem(12px !important);
+    }
+    &-13 {
+        font-size: rem(13px !important);
+    }
+    &-14 {
+        font-size: rem(14px !important);
+    }
+    &-15 {
+        font-size: rem(15px !important);
+    }
+    &-16 {
+        font-size: rem(16px !important);
+    }
+    &-17 {
+        font-size: rem(17px !important);
+    }
+    &-18 {
+        font-size: rem(18px !important);
+    }
+    &-19 {
+        font-size: rem(19px !important);
+    }
+    &-20 {
+        font-size: rem(20px !important);
+    }
+    &-21 {
+        font-size: rem(21px !important);
+    }
+    &-22 {
+        font-size: rem(22px !important);
+    }
+    &-23 {
+        font-size: rem(23px !important);
+    }
+    &-24 {
+        font-size: rem(24px !important);
+    }
+    &-25 {
+        font-size: rem(25px !important);
+    }
+    &-26 {
+        font-size: rem(26px !important);
+    }
+    &-27 {
+        font-size: rem(27px !important);
+    }
+    &-28 {
+        font-size: rem(28px !important);
+    }
+    &-29 {
+        font-size: rem(29px !important);
+    }
+    &-30 {
+        font-size: rem(30px !important);
+    }
+}
+
+// Transitions
+.transition {
+    &--slow {
+        @include transition(all 0.5s ease);
+    }
+    &--fast {
+        @include transition(all 0.3s ease);
+    }
+}
+
+// Link Options
+.link {
+    position: relative;
+    &::after {
+        content: "";
+        background-color: $color-primary;
+        width: 100%;
+        height: rem(2px);
+        position: absolute;
+        left: 0;
+        bottom: rem(1px);
+        @include opacity(0);
+        @extend .transition--fast;
+    }
+    &--underline {
+        &::after {
+            @include opacity(1);
+        }
+        &:hover {
+            &::after {
+                @include opacity(0);
+            }
+        }
+    }
+    &--default {
+        @include links(
+            $color-default-link,
+            $color-default-link-visited,
+            $color-default-link-hover,
+            $color-default-link-active
+        );
+        &::after {
+            background-color: $color-base;
+        }
+    }
+    &--light {
+        @include links(
+            $color-light-link,
+            $color-light-link-visited,
+            $color-light-link-hover,
+            $color-light-link-active
+        );
+    }
+}
+
+// Truncating the paragraphs
+.truncate {
+    &--1-line {
+        @include ellipsis(20px, 1);
+    }
+
+    &--2-line {
+        @include ellipsis(50px, 2);
+    }
+
+    &--3-line {
+        @include ellipsis(70px, 3);
+    }
+}
+
+// BG Cover
+.bg {
+    &-cover {
+        background-size: cover;
+    }
+    &-position {
+        &-center {
+            background-position: center center;
+        }
+    }
+    &-no-repeat {
+        background-repeat: no-repeat;
+    }
+    &-primary {
+        background-color: $color-primary;
+    }
+    &-secondary {
+        background-color: $color-secondary;
+    }
+    &-base {
+        background-color: $color-base;
+    }
+}
+
+// Text
+.text {
+    &-primary {
+        color: $color-primary;
+    }
+    &-secondary {
+        color: $color-secondary;
+    }
+    &-white {
+        color: $color-white;
+    }
+    &-base {
+        color: $color-base;
+    }
+    &-line-through {
+        text-decoration: line-through;
+    }
+}
+
+.full-screen {
+    @extend .bg-cover;
+    @extend .bg-no-repeat;
+    @extend .bg-position-center;
+}
+
+// Border Radius
+.border-radius {
+    &-0 {
+        @include border-radius(0);
+    }
+    &-4 {
+        @include border-radius(rem(4px));
+    }
+}

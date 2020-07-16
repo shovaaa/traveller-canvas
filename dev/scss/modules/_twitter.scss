@@ -1,0 +1,38 @@
+.latest-tweet{
+    width: 320px;
+    height: auto;
+    background-color: var(--light-grey);
+    text-align: center;
+    padding: 30px;
+
+    .title{
+        font-size: 20px;
+    }
+
+    .description{
+        font-size: 14px;
+        padding: 10px 0 0;
+
+        i{
+            color: var(--background-blue);
+        }
+
+        .link{
+            font-size: 14px;
+            color: var(--link-blue);
+            padding-left: 0px;
+        }
+    }
+    .twitter__para{
+        font-size: 14px;
+        padding: 10px 0;
+        line-height: 20px;
+    }
+
+    div{
+        i{
+            font-size: 18px;
+            padding: 0 5px;
+        }
+    }
+}

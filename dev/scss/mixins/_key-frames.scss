@@ -1,0 +1,10 @@
+// Animations and keyframes
+//@include keyframes(slide-down) {
+//    0% { opacity: 1; }
+//    90% { opacity: 0; }
+//}
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}

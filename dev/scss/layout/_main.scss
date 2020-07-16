@@ -1,0 +1,22 @@
+.#{$global} {
+    &-app {
+        height: 100vh;
+    }
+    &-wrap {
+        flex: 1 0 auto;
+    }
+}
+
+.above-the-fold {
+    background-color: var(--cyan);
+    width: 100%;
+    min-height: 100vh;
+}
+
+.content {
+    &-wrap {
+        background-color: $color-white;
+        padding: 75px 0;
+        position: relative;
+    }
+}

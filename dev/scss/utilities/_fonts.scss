@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'Quattrocento Sans';
+  src: url('#{$font-path}/quattrocentoSans.eot?#iefix') format('embedded-opentype'),
+      url('#{$font-path}/quattrocentoSans.woff2') format('woff2'),
+      url('#{$font-path}/quattrocentoSans.woff') format('woff'),
+      url('#{$font-path}/quattrocentoSans.ttf') format('truetype'),
+      url('#{$font-path}/quattrocentoSans.svg#quattrocentoSans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Quattrocento Sans';
+  src: url('#{$font-path}/quattrocentoSans-BoldItalic.eot');
+  src: url('#{$font-path}/quattrocentoSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('#{$font-path}/quattrocentoSans-BoldItalic.woff2') format('woff2'),
+      url('#{$font-path}/quattrocentoSans-BoldItalic.woff') format('woff'),
+      url('#{$font-path}/quattrocentoSans-BoldItalic.ttf') format('truetype'),
+      url('#{$font-path}/quattrocentoSans-BoldItalic.svg#quattrocentoSans-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Quattrocento Sans';
+  src: url('#{$font-path}/quattrocentoSans-Italic.eot');
+  src: url('#{$font-path}/quattrocentoSans-Italic.eot?#iefix') format('embedded-opentype'),
+      url('#{$font-path}/quattrocentoSans-Italic.woff2') format('woff2'),
+      url('#{$font-path}/quattrocentoSans-Italic.woff') format('woff'),
+      url('#{$font-path}/quattrocentoSans-Italic.ttf') format('truetype'),
+      url('#{$font-path}/quattrocentoSans-Italic.svg#quattrocentoSans-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Quattrocento Sans';
+  src: url('#{$font-path}/quattrocentoSans-Bold.eot');
+  src: url('#{$font-path}/quattrocentoSans-Bold.eot?#iefix') format('embedded-opentype'),
+      url('#{$font-path}/quattrocentoSans-Bold.woff2') format('woff2'),
+      url('#{$font-path}/quattrocentoSans-Bold.woff') format('woff'),
+      url('#{$font-path}/quattrocentoSans-Bold.ttf') format('truetype'),
+      url('#{$font-path}/quattrocentoSans-Bold.svg#quattrocentoSans-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}

@@ -1,0 +1,17 @@
+html,
+body {
+  height: auto;
+  font-size: 10px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: $color-body;
+  font-size: rem(23px);
+  @extend .font-face-base;
+  line-height: 1.3;
+  color: $color-base;
+  @include font-smoothing(on);
+  // letter-spacing: 0.025em;
+}

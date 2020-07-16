@@ -1,0 +1,23 @@
+.home__third{
+
+    .display{
+        margin: 3% 11% 0;
+
+        @include respond-below(xs){
+            margin: 20px 0 0;
+        }        
+
+    }
+
+    .picture__card{
+        padding: 3% 11% 0;
+
+        @include respond-below(xs){
+            padding: 40px 0;
+        }
+    }
+
+    .slick__img{
+        display: none;
+    }
+}

@@ -1,0 +1,103 @@
+.blog2{
+    .posts__header-container{
+        display: none !important;
+    }
+
+    
+    .blog__flex1{
+        margin: 0;
+        padding: 2% 2.6%;
+
+        @include respond-below(xs){
+            width: 100%;
+            height: auto;
+        }
+
+        .picture__card1-bg{
+            margin: 3% 0 3% 14%;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('.././images/image3.jpg');
+            background-size: cover;
+            padding-top: 40px;
+
+            @include respond-below(xs){
+                margin: 0;
+            }
+
+            .blog__featured{
+                width: 160px;
+                height: auto;
+                background-color: var(--link-pink);
+                font-size: 12px;
+                font-weight: bold;
+                color: white;
+                text-transform: uppercase;
+                padding: 10px 0 7px 12px;
+            }
+    
+            .card,
+            .text__card{
+                background-color: transparent;
+                padding-top: 289px;
+                padding-left: 5%;
+                width: 700px;
+                height: 400px;
+            }
+            .text__card-text{
+                color: var(--white);
+            }
+        }
+
+        .posts__card-container{
+            width: 815px;
+            height: auto;
+            padding: 3% 0 3% 14%;
+
+            @include respond-below(xs){
+                padding: 30px 0 0;
+            }
+
+            .hidden{
+                display: inline-flex;
+            }
+
+            .posts__card-flex{
+                width: 330px;
+                height: auto;
+                padding: 0;
+                padding-bottom: 20px;
+                margin: 0 0 30px 15px;
+                .posts__card-img{
+                    width: 110px;
+                    height: 70px;
+                    padding-top: 2px;
+                    filter: grayscale(30%);
+                }
+    
+                .posts__card-body{
+                    padding: 0 0 0 20px;
+    
+                    .posts__card-title{
+                        font-size: 10px;
+                    }
+                    .posts__card-text{
+                        font-size: 13px;
+                    }
+
+                    .posts__card-info{
+
+                        .posts__card-para{
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .btn{
+            margin-bottom: 25px;
+        }
+        
+    }
+    
+    
+}

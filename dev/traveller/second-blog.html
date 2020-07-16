@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Blog2: Deduce</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="../css/app.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" type="text/html" href="../slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/html" href="../slick/slick.css" />
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- slick Carousel CDN -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <div class="theme-app d-flex flex-column">
+        <div class="theme-wrap">
+            <!-- Site Overlay -->
+            <section class="site-overlay"></section>
+            <main class="theme-main blog blog2">
+                @@include('../includes/header.html')
+                @@include('../includes/navbar.html')
+                @@include('../includes/banner.html')
+                <section class="blog__heading">
+                    <p class="title">Lorem ipsum dolor sit amet consectetur</p>
+                    <p class="description">Home/Pages/Blog/Popular Posts</p>
+                </section>
+                <div class="d-flex flex-row blog__flexContainer">
+                    <div class="blog__flex1">
+                        <div class="picture__card1-bg">
+                            <div class="blog__featured">Featured, Lifestyle</div>
+                            @@include('../includes/textCard.html')
+                        </div>
+                        @@include('../includes/cards.html')
+                        <button class="btn">Load More <i class="fas fa-long-arrow-alt-right"></i></button>
+                    </div>
+
+                    <div class="blog__flex2">
+                        <form class="form-inline d-flex md-form form-sm mt-0 blog__search-box">
+                            <input class="form-control form-control-sm ml-3" type="text" placeholder="Search Blog..."
+                                aria-label="Search">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </form>
+                        @@include('../includes/trendingtopic.html')
+                        @@include('../includes/smallbanner.html')
+                        @@include('../includes/twitter.html')
+                    </div>
+                </div>
+                @@include('../includes/horizontalLine.html')
+                @@include('../includes/subscribe.html')
+            </main>
+        </div>
+        @@include('../includes/footer.html')
+    </div>
+</body>
+
+</html>

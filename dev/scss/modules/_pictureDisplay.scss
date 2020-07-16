@@ -1,0 +1,98 @@
+.picture__card{
+    padding: 3% 11%;
+
+    @include respond-below(xs){
+        padding: 0px;
+    }
+    
+    .picture__card1-bg{
+        margin: 0 30px 0 15px;
+
+        @include respond-below(xs){
+            margin: 0;
+        }
+
+        .text__card{
+            padding-top: 69%;
+            padding-left: 5%;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('.././images/image2.jpg');
+            background-size: cover;
+            width: 500px;
+            height: 457px;
+
+            .text__card-text{
+                color: var(--white);
+            }
+        }
+        
+        
+    }
+
+    .picture__card2-bg{
+        .text__card{
+            padding-top: 18%;
+            padding-left: 5%;
+            width: 520px;
+            height: 200px;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('.././images/image3.jpg');
+            background-size: cover;
+
+            .text__card-text{
+                color: var(--white);
+            }
+        }
+    }
+
+    .picture__card3-bg{
+        margin: 30px 30px 0 0;
+
+        @include respond-below(xs){
+            margin: 0;
+        }
+
+        .text__card{
+            padding-top: 50%;
+            padding-left: 2%;
+            width: 246px;
+            height: 225px;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('.././images/image4.jpg');
+            background-size: cover;
+
+            @include respond-below(xs){
+                width: fit-content;
+                padding-left: 30px;
+                padding-top: 100px;
+            }
+
+            .text__card-text{
+                color: var(--white);
+                font-size: 12px;
+            }
+        }
+    }
+
+
+    .picture__card4-bg{
+        .text__card{
+            padding-top: 50%;
+            padding-left: 2%;
+            width: 246px;
+            height: 225px;
+            margin-top: 30px;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('.././images/image5.jpg');
+            background-size: cover;
+
+            @include respond-below(xs){
+                width: fit-content;
+                margin-top: 0px;
+                padding-top: 30px;
+                padding-left: 0px;
+            }
+
+            .text__card-text{
+                color: var(--white);
+                font-size: 12px;
+            }
+        }
+    }
+}

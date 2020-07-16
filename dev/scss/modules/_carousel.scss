@@ -1,0 +1,65 @@
+.carousel__container{
+    padding: 60px 110px 0;
+
+    @include respond-below(xs){
+        padding: 20px 10px;
+    }
+
+    .title,
+    .description{
+        padding: 0 45px;
+
+        @include respond-below(xs){
+            padding: 0 30px;
+        }
+    }
+
+    .slick__carousel{
+        display: flex;
+        flex-direction: row;
+    }
+    .slick__card{
+        padding-top: 23px;
+        margin-left: 28px;
+
+        @include respond-below(xs){
+            margin-right: 10px;
+        }
+
+    }
+
+    .slick-list{
+        order: 2;
+        
+    }
+
+    .slick__prevarrow{
+        width: 39px;
+        height: 32px;
+        font-size: 30px;
+        color: var(--light-gray);
+        order: 1;
+        align-self: flex-start;
+        padding-top: 77px;
+
+        @include respond-below(xs){
+            margin-right: 10px;
+        }
+    }
+
+    .slick__nextarrow{
+        width: 39px;
+        height: 32px;
+        font-size: 30px;
+        color: var(--light-gray);
+        order: 3;
+        align-self: flex-start;
+        margin-left: 28px;
+        padding-top: 77px;
+
+        @include respond-below(xs){
+            margin-left: 10px;
+        }
+    }
+}
+

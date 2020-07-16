@@ -1,0 +1,19 @@
+// Links Mixin
+// eg: @include links($color-link, $color-link, $color-link-hover, $color-link);
+@mixin links($link, $visited, $hover, $active) {
+  & {
+    color: $link;
+    &:visited {
+      color: $visited;
+    }
+    &:hover {
+      color: $hover;
+      text-decoration: none;
+    }
+    &:active,
+    &:focus {
+      color: $active;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+// @include gradient(red, transparent, horizontal);
+// @include gradient(red, green, vertical);
+@mixin gradient($start-color, $end-color, $orientation) {
+  background: $start-color;
+  @if $orientation=='vertical' {
+      background: -webkit-linear-gradient(top, $start-color, $end-color);
+      background: linear-gradient(to bottom, $start-color, $end-color);
+  }
+  @if $orientation=='vertical-bottom' {
+      background: -webkit-linear-gradient(bottom, $start-color, $end-color);
+      background: linear-gradient(to top, $start-color, $end-color);
+  }
+  @else if $orientation=='horizontal' {
+      background: -webkit-linear-gradient(left, $start-color, $end-color);
+      background: linear-gradient(to right, $start-color, $end-color);
+  }
+  @else if $orientation=='horizontal-right' {
+      background: -webkit-linear-gradient(right, $start-color, $end-color);
+      background: linear-gradient(to left, $start-color, $end-color);
+  }
+  @else {
+      background: -webkit-radial-gradient(center, ellipse cover, $start-color, $end-color);
+      background: radial-gradient(ellipse at center, $start-color, $end-color);
+  }
+}

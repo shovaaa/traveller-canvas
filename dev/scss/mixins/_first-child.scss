@@ -1,0 +1,11 @@
+// @include first-child() {
+//     background: red;
+// }
+// @include first-child() {
+//     margin-bottom: rem(0);
+// }
+@mixin first-child() {
+    &:first-of-type {
+        @content;
+    }
+}

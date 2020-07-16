@@ -1,0 +1,5 @@
+//[@include animation (loader 3s 300ms infinite ease-out);]
+//@include animation('slide-down 5s 3');
+@mixin animation($value) {
+  animation: $value;
+}

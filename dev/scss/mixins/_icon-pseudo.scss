@@ -1,0 +1,8 @@
+// Icons Pseudo
+// eg: @include halong-icons-pseudo; [within the pseudo class]
+$halong-icons: 'Halong-Hub';
+
+@mixin halong-icons-pseudo {
+  position: absolute;
+  font-family: $halong-icons;
+}

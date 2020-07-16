@@ -1,0 +1,194 @@
+//slick card CSS
+.slick__card{
+    width: 100%;
+    height: auto;
+    border: none;
+    border-bottom: 1px solid var(--light-grey);
+
+    @include respond-below(xs){
+        width: 100%;
+    }
+
+    .slick__img{
+        width: 100%;
+        height: 143px;
+        margin-bottom: 10px;
+        filter: grayscale(30%);
+    }
+
+    .slick__card-body{
+        width: 100%;
+        height: auto;
+        padding: 0px;
+
+        @include respond-below(xs){
+            padding-bottom: 20px;
+        }
+
+        .slick__title{
+            width: 100%;
+            height: auto;
+            font-size: 14px;
+            color: var(--title-red);
+            text-transform: uppercase;
+            margin: 16px 0 0;
+        }
+        .slick__text{
+            width: 100%;
+            height: auto;
+            font-size: 15px;
+            margin: 8px 0px 13px;
+        }
+        .slick__para{
+            font-size: 13px;
+            font-style: oblique;
+            padding-left: 15px;
+            padding-bottom: 13px;
+            color: var(--light-gray);
+        }
+        .slick__link{
+            width: 100%;
+            height: auto;
+            padding-right: 15px;
+            border-right: 2px solid var(--light-gray);
+            color: var(--link-blue);
+        }
+    }
+}
+
+
+
+//cards CSS
+.posts__card-container{
+    padding: 35px  0 0 155px;
+
+    @include respond-below(xs){
+        padding: 0px 20px 30px;
+        display: block !important;
+    }
+
+    .posts__header{
+        padding-bottom: 2%;
+
+
+        .link{
+            align-self: end;
+        }
+
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    .posts__card-flex{
+        width: 500px ;
+        height: 155px;
+        border: none;
+        border-bottom: 1px solid var(--light-grey);
+        margin:0 50px 30px 15px;
+        color: var(--black);
+        
+        @include respond-below(xs){
+            width: 100%;
+            height: auto;
+            margin: 0px;
+        }
+        .posts__card-img{
+            width: 175px;
+            height: 125px;
+            padding-top: 2px;
+            filter: grayscale(30%);
+
+            @include respond-below(xs){
+                max-width: 100px;
+                height: 110px;
+                padding-top: 15px;
+            }
+        }
+        .posts__card-body{
+            padding-left: 30px;
+
+            @include respond-below(xs){
+                padding-left: 20px;
+            }
+    
+            .posts__card-title{
+                width: 100%;
+                height: auto;
+                font-size: 12px;
+                color: var(--title-red);
+                text-transform: uppercase;
+            }
+            .posts__card-text{
+                width: auto;
+                height: auto;
+                font-size: 15px;
+                margin: 8px 0px;
+
+                @include respond-below(xs){
+                    width: 200px;
+                }
+            }
+            .posts__card-info{
+                width: 100%;
+                height: auto;
+    
+                .posts__card-para{
+                    width: 100%;
+                    font-size: 12px;
+                    font-style: oblique;
+                    padding-left: 15px;
+                    color: var(--light-gray);
+                }
+                .posts__card-link{
+                    width: 100%;
+                    height: auto;
+                    padding-right: 15px;
+                    border-right: 2px solid var(--light-gray);
+                    color: var(--link-blue);
+                }
+            }
+        }
+    }
+}
+
+//text-card CSS
+.text__card{
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+    border-bottom: none;
+
+    
+
+    .text__card-title{
+        width: 100%;
+        height: auto;
+        font-size: 12px;
+        color: var(--title-red);
+        text-transform: uppercase;
+    }
+
+    .text__card-text{
+        width: 100%;
+        height: auto;
+        font-size: 15px;
+        margin: 8px 0px;
+    }
+
+    .text__card-para{
+        font-size: 12px;
+        width: 100%;
+        font-style: oblique;
+        padding-left: 15px;
+        color: var(--light-gray);
+    }
+    .text__card-link{
+        width: 100%;
+        height: auto;
+        padding-right: 15px;
+        border-right: 2px solid var(--light-gray);
+        color: var(--link-blue);
+    }
+}

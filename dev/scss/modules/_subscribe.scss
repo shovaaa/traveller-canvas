@@ -1,0 +1,42 @@
+$dark: var(--dark);
+
+.subscribe__container{
+    margin: 0 150px;
+    padding: 20px 0 90px;
+
+    @include respond-below(xs){
+        margin: 0 20px;
+    }
+
+    .subscribe__text{
+        width: 400px;
+        height: auto;
+        margin-left: 50px;
+
+        @include respond-below(xs){
+            margin-left: 0;
+        }
+
+        .subscribe__title{
+            font-size: 22px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: var(--dark);
+            margin-bottom: 3px;
+        }
+        
+        .subscribe__para{
+            font-size: 16px;
+            color: var(--icon);
+        }
+    }
+
+    .subscribe__input{
+        margin-left: 106px;
+
+        @include respond-below(xs){
+            margin-left: 0;
+            margin-top: 20px;
+        }
+    }
+}

@@ -1,0 +1,5 @@
+// User Select
+/* eg: @include user-select(none); */
+@mixin user-select($user-select) {
+  user-select: ($user-select);
+}

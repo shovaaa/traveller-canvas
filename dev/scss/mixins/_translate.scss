@@ -1,0 +1,5 @@
+// Translate 3D Transition
+// eg: @include translate3d(0,0,0);
+@mixin translate3d($x, $y, $z) {
+  transform: translate3d($x, $y, $z);
+}

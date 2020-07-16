@@ -1,0 +1,102 @@
+.blog{
+
+    .banner{
+        margin: 70px 150px 40px;
+
+        @include respond-below(xs){
+            margin: 50px 0 40px;
+        }
+    }
+
+    .blog__heading{
+        border-bottom: 1px solid var(--light-grey);
+        padding-bottom: 20px;
+        margin: 0 150px;
+
+        @include respond-below(xs){
+            margin: 0 10px;
+        }
+    }
+
+    .blog__flexContainer{
+        @include respond-below(xs){
+            display: block !important;
+        }
+        
+    }
+
+    .blog__flex1{
+        padding: 2% 4%;
+        margin: 0 50px 30px 0;
+
+        @include respond-below(xs){
+            padding: 0;
+            margin: 0 50px 0 0;
+        }
+
+        .posts__card-flex{
+            width: 660px;
+            height: auto;
+            padding: 0;
+            padding-bottom: 20px;
+
+            @include respond-below(xs){
+                padding-top: 30px;
+            }
+            
+            .posts__card-body{
+                padding: 0px 30px 12.5px;
+            }
+        }
+        .btn{
+            margin-left: 400px;
+        }
+    }
+    
+    .blog__flex2{
+        margin-top: 50px;
+
+        @include respond-below(xs){
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+    
+        .blog__search-box{
+            width: 315px;
+            height: auto;
+            padding-left: 0;
+            background-color: var(--light-grey);
+            margin-bottom: 40px;
+
+        
+            input{
+                width: 265px;
+                height: auto;
+                padding: 12px;
+                border: white;
+                font-size: 15px;
+                background-color: var(--light-grey);
+                font-style: oblique;
+            }
+
+            i{
+                color: var(--icon);
+                font-size: 18px;
+            }
+        }
+
+        .trending__categoryInfo{
+            margin-bottom: 30px;
+        }
+
+        .smallbanner__container{
+            margin-bottom: 30px;
+        }
+    }
+
+    .carousel__container{
+        .slick__img{
+            display: none;
+        }
+    }
+}
