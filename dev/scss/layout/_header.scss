@@ -18,14 +18,25 @@
     margin-left: 0px;
     margin-right: 0px;
 
+    @include respond-below(sm){
+        flex-direction: column !important;
+        align-items: center;
+    }
+
     .icon{
         width: max-content;
         height: auto;
         padding: 0px 35px;
         margin: 0px;
 
-        @include respond-below(xs){
-        
+        @include respond-below(xl){
+            padding: 0;
+        }
+
+        @include respond-below(lg){
+            padding: 0;
+        }
+        @include respond-below(sm){
             padding: 0px;
             
         }
@@ -51,11 +62,17 @@
                 margin-left: 5px;
             }
         }
-       
-        @include respond-below(xs){
-        
-            padding: 0px;
-            
+        @include respond-below(xl){
+            padding: 0 250px;
+        }
+       @include respond-below(lg){
+           padding: 0px 150px;
+       }
+       @include respond-below(md){
+           padding: 0 60px ;
+        }
+        @include respond-below(sm){
+            padding: 0px; 
         }
     }
 
@@ -65,10 +82,12 @@
         padding-left: 393px;
         padding-bottom: 7px;
 
-        @include respond-below(xs){
-        
+        @include respond-below(xl){
             padding: 0px;
-            
+        }
+
+        @include respond-below(sm){
+            align-self: center;
         }
 
         i{
