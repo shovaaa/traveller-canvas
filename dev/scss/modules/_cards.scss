@@ -182,6 +182,10 @@
         height: auto;
         font-size: 15px;
         margin: 8px 0px;
+
+        .hidden{
+            display: none;
+        }
     }
 
     .text__card-para{

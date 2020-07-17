@@ -1,0 +1,57 @@
+.comment__container{
+    border-bottom: 1px solid var(--light-grey);
+    .title{
+        font-size: 20px;
+        font-weight: bold;
+        padding: 20px 0;
+    }
+
+    .comment{
+        padding-bottom: 40px;
+        
+        .comment__img{
+            width: 100px;
+            height: 70px;
+        }
+
+        .comment__detail{
+
+            .link{
+                padding: 0;
+                padding-left: 15px;
+                font-size: 15px;
+                margin: 0;
+            }
+            .comment__replyIcon{
+                padding-left: 400px;
+                font-size: 17px;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            .comment__date{
+                font-size: 12px;
+                width: 100%;
+                font-style: oblique;
+                padding-left: 15px;
+                color: var(--light-gray);
+                margin: 0;
+            }
+            .comment__text{
+                font-size: 15px;
+                padding-left: 15px;
+            }
+        }
+    }
+
+    .comment__reply{
+        padding-left: 115px;
+
+        .comment__detail{
+            .comment__replyIcon{
+                padding-left: 285px;
+            }
+        }
+
+        
+    }
+}

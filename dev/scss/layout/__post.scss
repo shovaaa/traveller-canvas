@@ -1,12 +1,19 @@
-body {
-    font-family: 'Quattrocento Sans', sans-serif;
-  }
-
 .post{
+    .banner{
+        margin: 70px 144px 40px 156px;
+
+        @include respond-below(xs){
+            margin: 70px 0 40px 0;
+        }
+    }
     .post__heading{
         border-bottom: 1px solid var(--light-grey);
         padding-bottom: 20px;
         margin: 0 150px;
+
+        @include respond-below(xs){
+            margin: 0 20px;
+        }
     }
 
     .picture__card1-bg{
@@ -81,7 +88,15 @@ body {
         width: 100%;
         height: auto;
         font-size: 15px;
-        margin-top: 50px;
+        margin-top: 30px;
+
+        @include respond-below(xs){
+            padding: 0 20px;
+        }
+
+        p{
+            line-height: 150%;
+        }
 
         .post__quotes{
             margin-top: 20px;
@@ -104,6 +119,10 @@ body {
         ul{
             margin: 20px 0;
             padding-left: 20px;
+
+            li{
+                line-height: 200%;
+            }
         }
 
     }
@@ -130,18 +149,81 @@ body {
     height: auto;
     margin: 3% 0 3% 11%;
 
+    @include respond-below(xs){
+        margin: 0;
+    }
+
     .post__mainBorder{
         padding-bottom: 50px;
         border-bottom: 1px solid var(--light-grey);
     }
 
-    .link{
-        padding-left: 0;
-        text-transform: uppercase;
-
-        i{
+    .post__arrow{
+        border-bottom: 1px solid var(--light-grey);
+        padding-bottom: 20px;
+        .link{
             padding-left: 0;
-            padding-right: 10px;
+            text-transform: uppercase;
+
+            i{
+                padding-left: 0;
+                padding-right: 10px;
+            }
         }
     }
+}
+
+.post__flex2{
+    
+
+    .post__card2{
+        margin: 0px 0 0 15px;
+
+        .title{
+            font-size: 20px;
+            margin: 0 0 0 12px;
+        }
+
+        .text__card{
+            width: 300px;
+            padding-top: 12px;
+            padding-bottom: 3px;
+            border-bottom: 1px solid var(--light-gray);
+        
+            .text__card-tittle{
+                margin: 0;
+            }
+            .text__card-text{
+                width: 300px;
+                padding-bottom: 6px;
+            
+
+                .active{
+                    display: none;
+                }
+                .hidden{
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .trending__categoryInfo{
+        padding: 45px 0 0 22px;
+    }
+
+    .smallbanner__mainContainer{
+        padding: 45px 0 0 30px;
+        
+        .smallbanner{
+            margin-right: 30px;
+        }
+    }
+
+    .latest-tweet{
+        margin: 25px 0 0 30px;
+
+        
+    }
+    
 }

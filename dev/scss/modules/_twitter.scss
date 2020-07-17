@@ -1,9 +1,9 @@
 .latest-tweet{
-    width: 320px;
+    width: 330px;
     height: auto;
     background-color: var(--light-grey);
     text-align: center;
-    padding: 30px;
+    padding: 25px 0 15px;
 
     .title{
         font-size: 20px;
@@ -25,7 +25,7 @@
     }
     .twitter__para{
         font-size: 14px;
-        padding: 10px 0;
+        padding: 10px;
         line-height: 20px;
     }
 
