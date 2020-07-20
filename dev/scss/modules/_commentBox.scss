@@ -8,6 +8,10 @@
     }
 
     .info-input{
+
+        @include respond-below(xs){
+            flex-direction: column !important;
+        }
         
         input{
             width: 500px;
@@ -15,6 +19,11 @@
             border: 1px solid var(--light-grey);
             color: var(--light-grey);
             font-size: 15px;
+
+            @include respond-below(xs){
+               width: 355px;
+            }
+
         }
     }
     .comment-input{
@@ -25,6 +34,11 @@
         color: var(--light-grey);
         font-size: 15px;
         margin-bottom: 30px;
+
+        @include respond-below(xs){
+            width: 355px;
+        }
+
     }
 
 }

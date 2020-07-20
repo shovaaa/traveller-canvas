@@ -92,6 +92,10 @@
         margin-top: 30px;
 
         @include respond-below(lg){
+            padding: 0;
+        }
+
+        @include respond-below(xs){
             padding: 0 20px;
             width: 100vw;
         }
@@ -138,10 +142,7 @@
     }
 
     .posts__tag{
-        color: white;
-
-       
-        
+        color: white;      
 
         span{
             background-color: var(--background-blue);
@@ -161,13 +162,25 @@
     }
 }
 
-.post__mainBlog{
+.post__container{
+    
+    @include respond-below(lg){
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    .post__mainBlog{
     width: 700px;
     height: auto;
     margin: 3% 0 3% 11%;
 
+    @include respond-below(lg){
+        margin: 50px;
+        align-self: center;
+    }
     @include respond-below(xs){
-        margin: 0;
+        margin: 10px;
+        margin-left: 337px;
     }
 
     .post__mainBorder{
@@ -178,9 +191,14 @@
     .post__arrow{
         border-bottom: 1px solid var(--light-grey);
         padding-bottom: 20px;
+
         .link{
             padding-left: 0;
             text-transform: uppercase;
+            
+            @include respond-below(xs){
+                margin-right: 177px !important;
+            }
 
             i{
                 padding-left: 0;
@@ -188,59 +206,60 @@
             }
         }
     }
-}
+    }
 
-.post__flex2{
-    
-
-    .post__card2{
-        margin: 0px 0 0 15px;
-
-        .title{
-            font-size: 20px;
-            margin: 0 0 0 12px;
-        }
-
-        .text__card{
-            width: 300px;
-            padding-top: 12px;
-            padding-bottom: 3px;
-            border-bottom: 1px solid var(--light-gray);
+    .post__flex2{
         
-            .text__card-tittle{
-                margin: 0;
+        
+        .post__card2{
+            margin: 0px 0 0 15px;
+
+            .title{
+                font-size: 20px;
+                margin: 0 0 0 12px;
             }
-            .text__card-text{
+
+            .text__card{
                 width: 300px;
-                padding-bottom: 6px;
+                padding-top: 12px;
+                padding-bottom: 3px;
+                border-bottom: 1px solid var(--light-gray);
             
-
-                .active{
-                    display: none;
+                .text__card-tittle{
+                    margin: 0;
                 }
-                .hidden{
-                    display: block;
+                .text__card-text{
+                    width: 300px;
+                    padding-bottom: 6px;
+                
+
+                    .active{
+                        display: none;
+                    }
+                    .hidden{
+                        display: block;
+                    }
                 }
             }
         }
-    }
 
-    .trending__categoryInfo{
-        padding: 45px 0 0 22px;
-    }
-
-    .smallbanner__mainContainer{
-        padding: 45px 0 0 30px;
-        
-        .smallbanner{
-            margin-right: 30px;
+        .trending__categoryInfo{
+            padding: 45px 0 0 22px;
         }
-    }
 
-    .latest-tweet{
-        margin: 25px 0 0 30px;
+        .smallbanner__mainContainer{
+            padding: 45px 0 0 30px;
+            
+            .smallbanner{
+                margin-right: 30px;
+            }
+        }
 
+        .latest-tweet{
+            margin: 25px 0 0 30px;
+
+            
+        }
         
     }
-    
 }

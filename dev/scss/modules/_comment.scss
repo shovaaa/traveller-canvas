@@ -39,6 +39,10 @@
             .comment__text{
                 font-size: 15px;
                 padding-left: 15px;
+
+                @include respond-below(xs){
+                    width: 45%;
+                }
             }
         }
     }
