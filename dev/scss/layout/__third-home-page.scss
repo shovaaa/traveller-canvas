@@ -18,6 +18,15 @@
         padding: 225px 0 65px 60px;
         margin: 50px 155px 0;
 
+        @include respond-below(xl){
+            margin: 50px 115px 0;
+        }
+        @include respond-below(lg){
+            margin: 50px 85px 0;
+        }
+        @include respond-below(md){
+            margin: 50px 65px 0;
+        }
         @include respond-below(xs){
             margin: 50px 0 0;
             padding: 225px 30px 65px;
@@ -27,6 +36,15 @@
     .picture__card{
         padding: 30px 145px 0 155px;
 
+        @include respond-below(xl){
+            padding: 30px 100px 0;
+        }
+        @include respond-below(lg){
+            padding: 30px 70px 0;
+        }
+        @include respond-below(md){
+            padding: 30px 50px 0;
+        }
         @include respond-below(xs){
             padding: 0 0 40px;
         }

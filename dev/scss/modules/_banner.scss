@@ -10,8 +10,11 @@
     padding: 30px 0px;
     background-color: var(--background-blue);
 
-    @include respond-below(xs){
+    @include respond-below(lg){
+        margin: 0 100px 70px;
+    }
+    @include respond-below(md){
         width: 100%;
-        margin: 0 0 30px;
+        margin: 0 0 50px;
     }
 }

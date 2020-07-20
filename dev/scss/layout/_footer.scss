@@ -5,16 +5,13 @@
     }
 }
 
-.p-2{
+
+.footer__imgContainer{
     padding: 0 !important;
 
     .footer__imgholder{
-        width: 170.5px;
+        width: 12.5%;
         height: auto;
-
-        @include respond-below(xs){
-            width: 50%;
-        }
 
         img{
             width: 100%;
@@ -23,25 +20,39 @@
         }
     }
 
-    .hidden{
-        @include respond-below(xs){
-            display: none;
-        }
-    }
 }
 
 .footer__infoContainer{
     width: 100vw;
     height: auto;
-    padding: 65px 0 60px 175px;
+    padding: 65px 0 60px 160px;
 
-    @include respond-below(xs){
-        padding: 30px;
+    @include respond-below(xl){
+        padding: 80px;
+    }
+    @include respond-below(lg){
+        padding: 60px;
+        padding-left: 100px;
     }
 
+    @include respond-below(sm){
+        padding: 30px;
+        padding-left: 30px;
+    }
     .footer__companyInfo{
-        width: 220px;
+        max-width: 250px ;
         height: auto;
+
+        @include respond-below(lg){
+            height: 200px;
+            margin-right: 180px;
+        }
+
+        @include respond-below(sm){
+            height: auto;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
 
         .logo{
             padding-bottom: 15px;
@@ -70,11 +81,16 @@
     }
 
     .footer__postInfo{
-        width: auto;
-        padding: 0px 75px 0 140px;
+        max-width: 350px;
+        margin: 0px 25px 0 110px;
 
-        @include respond-below(xs){
-            padding: 30px 0;
+        @include respond-below(lg){
+            padding: 0px 15px;
+            margin: 0;
+        }
+
+        @include respond-below(sm){
+            margin-bottom: 20px;
         }
 
         .footer__title{
@@ -90,6 +106,24 @@
             .card-body{
                 padding: 0;
             }
+        }
+    }
+
+    .footer__trendingInfo{
+        max-width: 350px;
+        padding: 5px 0 0;
+
+        @include respond-below(lg){
+            padding-left: 10px;
+            margin-top: -115px;
+        }
+
+        @include respond-below(md){
+            margin-top: -205px;
+        }
+
+        @include respond-below(sm){
+            margin-top: 0px;
         }
     }
     }

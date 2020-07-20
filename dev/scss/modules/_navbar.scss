@@ -11,6 +11,10 @@
         padding-left: 245px;
         letter-spacing: 1px;
 
+        @include respond-below(lg){
+            padding-left: 100px;
+        }
+
         @include respond-below(xs){
             
                 display: inline-block;

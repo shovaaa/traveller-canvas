@@ -4,6 +4,17 @@ $dark: var(--dark);
     margin: 0;
     padding: 10px 0 80px 165px;
 
+    @include respond-below(xl){
+        padding: 10px 0 80px 110px;
+    }
+
+    @include respond-below(lg){
+        padding: 10px 0 80px 10px;
+    }
+    @include respond-below(md){
+        padding: 0 80px;
+        margin-bottom: 80px;
+    }
     @include respond-below(xs){
         padding: 0 20px;
         margin-bottom: 50px;
@@ -35,9 +46,16 @@ $dark: var(--dark);
     .subscribe__input{
         margin-left: 80px;
 
+        @include respond-below(lg){
+            margin-left: 0px;
+        }
+        @include respond-below(md){
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+
         @include respond-below(xs){
             margin-left: 0;
-            margin-top: 20px;
         }
     }
 }

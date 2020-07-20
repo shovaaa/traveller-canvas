@@ -1,13 +1,27 @@
 .picture__card{
     padding: 70px 0 0 160px;
 
+    @include respond-below(xl){
+        padding: 70px 30px 0 140px;
+    }
+
+    @include respond-below (lg){
+        padding: 70px 0 0 95px;
+    }
+    @include respond-below(md){
+        padding: 70px 0 0 55px;
+    }
     @include respond-below(xs){
         padding: 0px;
     }
     
+    .row{
+        margin: 0;
+    }
     .picture__card1-bg{
         margin: 0 30px 0 15px;
 
+        
         @include respond-below(xs){
             margin: 0;
         }
@@ -20,6 +34,13 @@
             width: 500px;
             height: 457px;
 
+            @include respond-below(lg){
+                width: 300px;
+            }
+            @include respond-below(xs){
+                width: 100vw;
+               
+            }
             .text__card-text{
                 color: var(--white);
             }
@@ -37,6 +58,13 @@
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('.././images/image3.jpg');
             background-size: cover;
 
+            @include respond-below(md){
+                width: 310px;
+            }
+
+            @include respond-below(xs){
+                width: 100%;
+            }
             .text__card-text{
                 color: var(--white);
             }
@@ -57,6 +85,10 @@
             height: 225px;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('.././images/image4.jpg');
             background-size: cover;
+
+            @include respond-below(md){
+                width: 140px;
+            }
 
             @include respond-below(xs){
                 width: fit-content;
@@ -81,6 +113,10 @@
             margin-top: 30px;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('.././images/image5.jpg');
             background-size: cover;
+
+            @include respond-below(md){
+                width: 140px;
+            }
 
             @include respond-below(xs){
                 width: fit-content;

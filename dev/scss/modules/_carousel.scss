@@ -1,6 +1,10 @@
 .carousel__container{
     padding: 60px 110px 0;
 
+    @include respond-below(md){
+        padding: 60px 50px 0;
+    }
+
     @include respond-below(xs){
         padding: 20px 10px;
     }

@@ -19,6 +19,12 @@
             font-size: 15px;
             padding-left: 715px;
 
+            @include respond-below(lg){
+                padding-left: 350px;
+            }
+            @include respond-below(md){
+                padding-left: 100px;
+            }
             @include respond-below(xs){
                 padding-left: 100px;
             }

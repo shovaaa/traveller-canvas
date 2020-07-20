@@ -18,6 +18,15 @@
     padding-top: 20px;
     padding-left: 605px;
 
+    @include respond-below(xl){
+        padding-left: 515px;
+    }
+    @include respond-below(lg){
+        padding-left: 275px;
+    }
+    @include respond-below(md){
+        padding-left: 150px;
+    }
     @include respond-below(xs){
         padding-left: 50px;
     }

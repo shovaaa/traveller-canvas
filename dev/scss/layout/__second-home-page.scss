@@ -3,12 +3,19 @@
     .carousel__container{
         padding: 35px 110px 0;
 
+        @include respond-below(md){
+            padding: 35px 60px 0;
+        }
         @include respond-below(xs){
             padding: 30px 10px;
         }
     }
     .banner{
         margin: 50px 140px 35px 156px;
+
+        @include respond-below(md){
+            margin: 50px 0px 35px;
+        }
 
         @include respond-below(xs){
             margin: 30px 0;
@@ -17,6 +24,9 @@
     .posts__card-container{
         padding: 0  150px 20px 140px;
 
+        @include respond-below(md){
+            padding: 0 80px 20px;
+        }
         @include respond-below(xs){
             padding: 30px 10px;
         }
