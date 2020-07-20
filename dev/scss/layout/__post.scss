@@ -1,8 +1,9 @@
 .post{
+    max-width: 100%;
     .banner{
         margin: 70px 144px 40px 156px;
 
-        @include respond-below(xs){
+        @include respond-below(lg){
             margin: 70px 0 40px 0;
         }
     }
@@ -11,7 +12,7 @@
         padding-bottom: 20px;
         margin: 0 150px;
 
-        @include respond-below(xs){
+        @include respond-below(lg){
             margin: 0 20px;
         }
     }
@@ -90,8 +91,9 @@
         font-size: 15px;
         margin-top: 30px;
 
-        @include respond-below(xs){
+        @include respond-below(lg){
             padding: 0 20px;
+            width: 100vw;
         }
 
         p{
@@ -109,10 +111,18 @@
         .post__para-img{
             margin: 30px 0;
 
+            @include respond-below(lg){
+                flex-direction: column !important;
+            }
+
             img{
                 width: 250px;
                 height: 150px;
                 margin-right: 30px;
+
+                @include respond-below(lg){
+                    margin-bottom: 20px;
+                }
             }
         }
 
@@ -129,6 +139,8 @@
 
     .posts__tag{
         color: white;
+
+       
         
 
         span{
@@ -136,6 +148,11 @@
             font-size: 15px;
             font-weight: bold;
             padding: 5px 20px;
+
+            @include respond-below(lg){
+                width: 33.33%;
+            }
+            
         }
         i{
             font-size: 12px;

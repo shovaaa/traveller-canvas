@@ -1,8 +1,11 @@
-.error__container{
+.error{
+    max-width: 100%;
+}
+    .error__container{
     padding: 70px 0 0 110px;
     margin-bottom: 100px;
 
-    @include respond-below(xs){
+    @include respond-below(lg){
         flex-direction: column !important;
         padding: 20px;
         margin: 0;
@@ -13,7 +16,7 @@
         height: 550px;
         margin-right: 40px;
 
-        @include respond-below(xs){
+        @include respond-below(lg){
             width: 100%;
             margin-right: 0;
         }
@@ -28,7 +31,7 @@
         align-self: flex-end;
         padding-bottom: 45px;
 
-        @include respond-below(xs){
+        @include respond-below(lg){
             width: 100%;
             height: auto;
             padding-top: 20px;
@@ -49,7 +52,7 @@
             font-size: 15px;
             margin-bottom: 45px;
 
-            @include respond-below(xs){
+            @include respond-below(lg){
                 width: 100%;
             }
         }

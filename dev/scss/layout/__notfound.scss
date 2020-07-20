@@ -1,8 +1,11 @@
+.notfound{
+    max-width: 100%;
+}
 .notfound__container{
     padding: 40px 0 0px 130px;
     margin-bottom: 80px;
 
-    @include respond-below(xs){
+    @include respond-below(lg){
         flex-direction: column !important;
         padding: 20px;
         margin-bottom: 0;
@@ -13,7 +16,7 @@
         height: 600px;
         margin-right: 50px;
 
-        @include respond-below(xs){
+        @include respond-below(lg){
             width: 100%;
             margin-right: 0;
         }

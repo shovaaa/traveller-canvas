@@ -1,9 +1,12 @@
+.contact{
+    max-width: 100%;
+}
 .contact__heading{
     border-bottom: 1px solid var(--light-grey);
     margin: 60px 145px 35px 150px;
     padding-bottom: 25px;
 
-    @include respond-below(xs){
+    @include respond-below(lg){
         margin: 60px 20px;
     }
 
@@ -13,7 +16,7 @@
             font-size: 15px;
             padding-left: 730px; 
             
-            @include respond-below(xs){
+            @include respond-below(lg){
                 padding-left: 50px;
             }
 
@@ -27,7 +30,7 @@
 .contact__container{
     padding: 0 155px;
 
-    @include respond-below(xs){
+    @include respond-below(lg){
         flex-direction: column !important;
         padding: 0;
     }
@@ -36,7 +39,7 @@
         font-size: 15px;
         width: 100%;
 
-        @include respond-below(xs){
+        @include respond-below(lg){
             width: 100%;
             padding: 0 20px;
         }
@@ -64,13 +67,13 @@
     .contact__form{
         margin-left: 15px;
 
-        @include respond-below(xs){
+        @include respond-below(lg){
             padding-top: 20px;
             margin: 0 30px;
         }
 
         div{
-            @include respond-below(xs){
+            @include respond-below(lg){
                 flex-direction: column !important;
             }
         }
@@ -85,7 +88,7 @@
             padding: 18px;
             border: 1px solid var(--light-grey);
 
-            @include respond-below(xs){
+            @include respond-below(lg){
                 margin-left: 0px;
                 margin-bottom: 10px;
                 
@@ -97,7 +100,7 @@
             height: 200px;
             padding: 18px 18px 170px;
 
-            @include respond-below(xs){
+            @include respond-below(lg){
                 width: auto;
                 margin-right: 0;
                 
@@ -108,7 +111,7 @@
             align-self: flex-end;
             margin-bottom: 35px;
 
-            @include respond-below(xs){
+            @include respond-below(lg){
                 align-self: center;
                 margin-top: 20px;
                 margin-bottom: 0;
@@ -122,7 +125,7 @@
     height: 435px;
     margin: 5px 0px 0px 155px;
 
-    @include respond-below(xs){
+    @include respond-below(lg){
         width: 100%;
         height: auto;
         margin: 30px 0 0;
@@ -133,7 +136,7 @@
         height: 375px;
         filter: grayscale(50%);
 
-        @include respond-below(xs){
+        @include respond-below(lg){
             width: 100%;
             height: auto;
         }
