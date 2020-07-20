@@ -3,7 +3,7 @@
     .banner{
         margin: 70px 144px 35px 156px;
 
-        @include respond-below(xs){
+        @include respond-below(md){
             margin: 50px 0 40px;
         }
     }
@@ -13,13 +13,13 @@
         padding-bottom: 20px;
         margin: 0 150px;
 
-        @include respond-below(xs){
+        @include respond-below(md){
             margin: 0 10px;
         }
     }
 
     .blog__flexContainer{
-        @include respond-below(xs){
+        @include respond-below(lg){
             display: block !important;
         }
         
@@ -28,7 +28,7 @@
     .posts__card-container{
         padding: 30px 0 0 95px;
 
-        @include respond-below(xs){
+        @include respond-below(md){
             padding:  0;
         }
     }
@@ -37,7 +37,7 @@
         padding: 15px 0px 0;
         margin: 0 20px 0 50px;
 
-        @include respond-below(xs){
+        @include respond-below(md){
             padding: 0;
             margin: 0;
         }
@@ -48,7 +48,7 @@
             padding: 0;
             padding-bottom: 25px;
 
-            @include respond-below(xs){
+            @include respond-below(md){
                 padding-top: 30px;
             }
             
@@ -68,7 +68,11 @@
     .blog__flex2{
         margin-top: 50px;
 
-        @include respond-below(xs){
+        @include respond-below(lg){
+            margin-top: 70px;
+            margin-left: 155px;
+        }
+        @include respond-below(md){
             margin-top: 0px;
             margin-left: 30px;
         }
@@ -109,7 +113,7 @@
     .carousel__container{
         padding: 0px 110px 40px;
 
-        @include respond-below(xs){
+        @include respond-below(md){
             padding: 0 20px 40px;
         }
         .title{

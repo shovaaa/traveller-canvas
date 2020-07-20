@@ -2,7 +2,7 @@
     .banner{
         margin: 70px 144px 35px 156px;
 
-        @include respond-below(xs){
+        @include respond-below(lg){
             margin: 70px 0 50px;
         }
     }

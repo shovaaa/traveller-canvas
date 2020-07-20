@@ -39,7 +39,7 @@
         border-bottom: 1px solid var(--light-grey);
         padding-bottom: 50px;
 
-        @include respond-below(xs){
+        @include respond-below(lg){
             flex-direction: column !important;
             
         }
@@ -47,10 +47,11 @@
         .blogger__img{
             padding-top: 10px;
 
-            @include respond-below(xs){
+            @include respond-below(lg){
                 width: 100%;
                 height: 100%;
                 padding-bottom: 20px;
+                align-self: center;
             }
 
             img{
@@ -66,9 +67,12 @@
             font-size: 15px;
             padding-top: 3px;
 
-            @include respond-below(xs){
+            @include respond-below(lg){
                 width: 100%;
                 margin-left: 0;
+            }
+
+            @include respond-below(xs){
                 padding: 0 20px;
             }
 
