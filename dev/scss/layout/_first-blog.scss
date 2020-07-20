@@ -20,7 +20,8 @@
 
     .blog__flexContainer{
         @include respond-below(lg){
-            display: block !important;
+            flex-direction: column !important;
+            align-items: center;
         }
         
     }
@@ -28,8 +29,11 @@
     .posts__card-container{
         padding: 30px 0 0 95px;
 
-        @include respond-below(md){
+        @include respond-below(lg){
             padding:  0;
+        }
+        @include respond-below(xs){
+            margin-left: 350px;
         }
     }
 
@@ -62,6 +66,12 @@
         }
         .btn{
             margin-left: 370px;
+            @include respond-below(lg){
+                margin-left: 250px;
+            }
+            @include respond-below(xs){
+                margin-left: 450px;
+            }
         }
     }
     
@@ -70,11 +80,7 @@
 
         @include respond-below(lg){
             margin-top: 70px;
-            margin-left: 155px;
-        }
-        @include respond-below(md){
-            margin-top: 0px;
-            margin-left: 30px;
+            margin-left: 0px;
         }
     
         .blog__search-box{

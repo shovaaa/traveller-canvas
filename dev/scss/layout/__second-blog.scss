@@ -54,9 +54,16 @@
             padding: 20px 0 20px 100px;
 
             @include respond-below(lg){
+                padding: 60px 80px 0;
+            }
+
+            @include respond-below(md){
                 padding: 30px 0 0;
             }
 
+            @include respond-below(xs){
+                margin-left: 0;
+            }
             .hidden{
                 display: inline-flex;
             }
@@ -67,6 +74,10 @@
                 padding: 0;
                 padding-bottom: 20px;
                 margin: 0 0 30px 15px;
+
+                @include respond-below(md){
+                    margin: 0 0 30px;
+                }
 
                 .posts__card-img{
                     width: 110px;
