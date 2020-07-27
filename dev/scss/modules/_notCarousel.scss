@@ -39,6 +39,7 @@
                 height: 100px;
                 margin-bottom: 10px;
                 filter: grayscale(30%);
+                object-fit: cover;
 
                 @include respond-below(xs){
                     max-width: 100%;

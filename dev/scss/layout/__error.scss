@@ -15,6 +15,7 @@
         width: 550px;
         height: 550px;
         margin-right: 40px;
+        object-fit: cover;
 
         @include respond-below(lg){
             width: 100%;

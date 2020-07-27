@@ -13,11 +13,13 @@
     .footer__imgholder{
         width: 12.5%;
         height: auto;
+        
 
         img{
             width: 100%;
             height: auto;
             filter: grayscale(30%);
+            object-fit: cover;
         }
     }
 
@@ -56,7 +58,9 @@
         }
 
         .logo{
+            padding: 0;
             padding-bottom: 15px;
+            
         }
 
         .footer__address-icon{

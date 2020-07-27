@@ -1,15 +1,15 @@
 .picture__card{
-    padding: 70px 0 0 160px;
+    padding: 70px 0 0 40px;
 
     @include respond-below(xl){
-        padding: 70px 30px 0 140px;
+        padding: 70px 0px 0 40px ;
     }
 
     @include respond-below (lg){
-        padding: 70px 0 0 95px;
+        padding: 70px 0 0;
     }
     @include respond-below(md){
-        padding: 70px 0 0 55px;
+        padding: 70px 0 0;
     }
     @include respond-below(xs){
         padding: 0px;
@@ -27,11 +27,11 @@
         }
 
         .text__card{
-            padding-top: 69%;
+            padding-top: 59%;
             padding-left: 5%;
             background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('.././images/image2.jpg');
             background-size: cover;
-            width: 500px;
+            width: 575px;
             height: 457px;
 
             @include respond-below(lg){
@@ -79,7 +79,7 @@
         }
 
         .text__card{
-            padding-top: 50%;
+            padding-top: 45%;
             padding-left: 2%;
             width: 240px;
             height: 225px;
@@ -106,7 +106,7 @@
 
     .picture__card4-bg{
         .text__card{
-            padding-top: 50%;
+            padding-top: 45%;
             padding-left: 2%;
             width: 240px;
             height: 225px;

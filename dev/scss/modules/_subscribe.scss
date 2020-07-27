@@ -2,10 +2,10 @@ $dark: var(--dark);
 
 .subscribe__container{
     margin: 0;
-    padding: 10px 0 80px 165px;
+    padding: 10px 0 80px 0px;
 
     @include respond-below(xl){
-        padding: 10px 0 80px 110px;
+        padding: 10px 0 80px 0px;
     }
 
     @include respond-below(lg){

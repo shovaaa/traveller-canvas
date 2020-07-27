@@ -57,6 +57,7 @@
             img{
                 width: 425px;
                 height: 375px;
+                object-fit: cover;
                 filter: grayscale(50%);
             }
         }

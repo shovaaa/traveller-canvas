@@ -34,10 +34,10 @@
     }
 
     .picture__card{
-        padding: 30px 145px 0 155px;
+        padding: 30px 0px 0 0px;
 
         @include respond-below(xl){
-            padding: 30px 100px 0;
+            padding: 30px 0px 0;
         }
         @include respond-below(lg){
             padding: 30px 70px 0;

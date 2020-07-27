@@ -135,6 +135,7 @@
         width: 100%;
         height: 375px;
         filter: grayscale(50%);
+        object-fit: cover;
 
         @include respond-below(lg){
             width: 100%;

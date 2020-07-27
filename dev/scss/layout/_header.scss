@@ -10,13 +10,7 @@
     }
 }
 
-.container{
-    max-width: 100% !important;
-    height: auto;
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+.header__container{
 
     @include respond-below(sm){
         flex-direction: column !important;
@@ -52,7 +46,7 @@
         padding: 0;
         width: max-content;
         height: auto;
-        padding: 0 0 0 297px;
+        padding: 0 297px;
 
         p{
             font-size: 27px;
@@ -63,7 +57,7 @@
             }
         }
         @include respond-below(xl){
-            padding: 0 250px;
+            padding: 0 297px;
         }
        @include respond-below(lg){
            padding: 0px 150px;
@@ -79,12 +73,8 @@
     .search-box{
         align-self: flex-end;
         color: var(--icon);
-        padding-left: 393px;
         padding-bottom: 7px;
 
-        @include respond-below(xl){
-            padding: 0px;
-        }
 
         @include respond-below(sm){
             align-self: center;
